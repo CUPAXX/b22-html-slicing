@@ -57,3 +57,7 @@ body {
 .cont3 {
     background-color: rgba(137, 85, 55, 1);
 }
+
+.cont4 {
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
