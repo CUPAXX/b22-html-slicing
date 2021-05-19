@@ -1,0 +1,59 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn{
+    box-shadow: 0 0 10px 0px rgba(255, 196, 0, 0.5);
+}
+.bg-local{
+    background-image: url(assets/bg1.png);
+    height: 645px;
+    z-index: -999;
+}
+.test.active{
+    color: rgb(99, 39, 0);
+    font-weight: 700;
+}
+.section1 {
+    height: 200px;
+    width: 1070px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bg2 {
+    width: 600px;
+}
+
+.btn2 {
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn3 {
+    box-shadow: 0 3px 8px 0px rgba(106, 64, 41, 0.403);
+    background-color: rgba(106, 64, 41, 1);
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bgFpassword{
+    background-image: url(assets/bg3.png);
+    height: 1100px;
+    z-index: -999;
+}
+.cont {
+    background-color: rgba(255, 203, 101, 1);
+}
+.cont2 {
+    background-color: rgba(0, 0, 0, 1);
+}
+.cont3 {
+    background-color: rgba(137, 85, 55, 1);
+}

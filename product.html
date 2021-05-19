@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Product</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="flex flex-row justify-center items-center bg-white py-6 border-b-2 border-gray-300 ">
+        <a href="#" class="block">
+          <img class="h-8" src="assets/logo.png">
+        </a>
+        <a href="#" class="block font-extrabold text-xl mr-36 pl-3">Coffee Shop</a>
+        <nav class="tNav flex flex-row text-lg items-center">
+          <a href="home.html" class=" text-gray-600 hover:underline p-4">Home</a>
+          <a href="product.html" class=" test active text-gray-600 hover:underline p-4">Product</a>
+          <a href="#" class=" text-gray-600 hover:underline p-4">Your Cart</a>
+          <a href="#" class=" text-gray-600 hover:underline p-4">History</a>
+          <i class="ml-36 fa fa-search text-gray-700" style="font-size:40px;"></i>
+          <div class="px-10">
+            <img class=" items-center h-8 w-8 relative" src="assets/chat.png" alt="">
+            <div class="absolute -mt-10 -ml-2">
+                <div class="bg-yellow-900 w-4 h-4 flex justify-center items-center rounded-full font-bold text-white" style="font-size: 10px;">1</div>
+            </div>
+          </div>
+          <img class=" items-center h-8 w-8 rounded-full" src="assets/user.png" alt="">
+        </nav>
+      </header>
+
+      <div class="flex flex-row ">
+          <div class="flex flex-col w-96 items-center border-r-2">
+              <h1 class="text-center font-bold text-2xl mt-8 text-yellow-900">Promo for you</h1>
+              <h2 class="text-center text-xs mt-10">Coupons will be updated every weeks</h2>
+              <h2 class="text-center text-xs mb-10">Check them out! </h2>
+              <div class="flex flex-row items-center ml-14">
+                  <div class="cont w-60 h-96 rounded-xl flex flex-col">
+                      <div class="flex-1 flex flex-col justify-center items-center border-dashed border-black space-y-2 border-b">
+                          <img class="w-24 h-24 rounded-full" src="assets/itemds.png" alt="">
+                          <h2 class="font-bold text-xl">Beef Spaghetti</h2>
+                          <h2 class="font-bold text-xl">20% OFF</h2>
+                          <h2 class="text-center text-sm">Buy 1 Choco Oreo and get 20% off for Beef Spaghetti</h2>
+                      </div>
+                      <div class="flex flex-col h-28 mt-2 items-center space-y-3">
+                          <h2 class="text-sm">COUPON CODE</h2>
+                          <h2 class="font-bold text-2xl">FNPR15RG</h2>
+                          <h2 class="text-xs">Valid untill October 10th 2020</h2>
+                      </div>
+                  </div>
+                  <div class="cont2 w-6 h-80 rounded-r-xl"></div>
+                  <div class="cont3 w-6 h-72 rounded-r-xl"></div>
+              </div>
+              <button class="btn3 text-white font-bold h-12 w-60 rounded-xl mt-10">Apply Coupon</button>
+              <div class="text-xs mt-28 mb-20 space-y-1">
+                  <h1 class="font-bold text-gray-700">Terms and Condition</h1>
+                  <ul class="text-gray-600 space-y-1">
+                      <li>1. You can only apply 1 coupon per day</li>
+                      <li>2. It only for dine in</li>
+                      <li>3. Buy 1 get 1 only for new user</li>
+                      <li>4. Should make member card to apply coupon</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="flex-1 flex flex-col">
+              <div class="flex flex-row">
+                  <h1>Favorite Product</h1>
+              </div>
+          </div>
+      </div>
+</body>
+</html>
