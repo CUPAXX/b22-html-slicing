@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Forgot Password</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <header class="flex flex-row justify-center items-center bg-white py-6 border-b-2 border-gray-300 ">
+        <a href="#" class="block">
+          <img class="h-8" src="assets/logo.png">
+        </a>
+        <a href="#" class="block font-extrabold text-xl mr-36 pl-3">Coffee Shop</a>
+        <nav class="tNav flex flex-row text-lg items-center">
+          <a href="home.html" class=" text-gray-600 hover:underline p-4">Home</a>
+          <a href="product.html" class=" text-gray-600 hover:underline p-4">Product</a>
+          <a href="payment.html" class=" text-gray-600 hover:underline p-4">Your Cart</a>
+          <a href="history.html" class="test active text-gray-600 hover:underline p-4">History</a>
+          <i class="ml-36 fa fa-search text-gray-700" style="font-size:40px;"></i>
+          <div class="px-10">
+            <img class=" items-center h-8 w-8 relative" src="assets/chat.png" alt="">
+            <div class="absolute -mt-10 -ml-2">
+                <div class="bg-yellow-900 w-4 h-4 flex justify-center items-center rounded-full font-bold text-white" style="font-size: 10px;">1</div>
+            </div>
+          </div>
+          <a href="profile.html">
+            <img class=" items-center h-8 w-8 rounded-full" src="assets/user.png" alt="">
+          </a>
+        </nav>
+      </header>
+
+    <div class="bghis flex justify-center ">
+        <div class="coba flex flex-col mt-20 ">
+                <h2 class="text-white text-2xl font-bold pb-2 text-center">Let’s see what you have bought!</h2>
+                <h2 class="text-white text-sm pb-5 text-center">Select item to delete</h2>
+            <h1 id="hideku" class="sel text-white text-sm text-right underline pb-5" >Select All</h1>
+            <h1 id="openModal" style="display:none" class="del text-white text-sm text-right underline pb-5" >Delete</h1>
+            <div class="flex flex-row space-x-3 mb-3">
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide" onclick="myFunction()" type="checkbox" >
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide2" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide3" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row space-x-3  mb-3">
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide4" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide5" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide6" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row space-x-3  mb-3">
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide7" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide8" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide9" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row space-x-3  mb-3">
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide10" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide11" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide12" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row space-x-3">
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide13" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide14" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-60 h-20 rounded-lg py-2 items-center bg-white">
+                    <div class="flex flex-row items-center">
+                        <img class="h-12 w-12 rounded-full mr-3" src="assets/hisp.png" alt="">
+                        <div class="flex flex-col">
+                            <h2 class="font-bold ">Veggie tomato mix</h2>
+                            <h2 class="text-sm text-yellow-900">IDR 34.000</h2>
+                            <div class="flex flex-row">
+                                <H2 class="text-sm text-yellow-900 pr-16">Delivered</H2>
+                                <label class="cb3 flex justify-center items-center">
+                                    <input id="checkHide15" onclick="myFunction()" type="checkbox">
+                                    <span class="checkmark3"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="z-10 relative bg-gray-100 pb-20 ">
+        <div class="flex flex-row pt-32 mx-32 items-center">
+            <div class="flex-1 flex flex-col space-y-4">
+                <div class="flex flex-row items-center">
+                    <a href="#" class="block">
+                        <img class="h-6" src="assets/logo.png">
+                      </a>
+                      <a href="#" class="block font-extrabold ml-4 pt-1">Coffee Shop</a>
+                      
+                </div>
+                <div class="flex flex-row w-80 leading-loose">
+                    <h2 class="text-sm font-medium text-gray-700">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</h2>
+                </div>
+                <div class="flex flex-row">
+                    <div class="text-yellow-900 bg-yellow-400 rounded-full w-8 h-8 flex items-center justify-center p-1">
+                        <i class="fa fa-facebook" style="font-size:17px"></i>
+                    </div>
+                    <div class=" mx-3 text-yellow-900 bg-yellow-400 rounded-full w-8 h-8 flex items-center justify-center p-1">
+                        <i class="fa fa-twitter" style="font-size:17px"></i>
+                    </div>
+                    <div class="text-yellow-900 bg-yellow-400 rounded-full w-8 h-8 flex items-center justify-center p-1">
+                        <i class="fa fa-instagram" style="font-size:17px"></i>
+                    </div>
+                </div>
+                <div class="block">
+                    <h2 class="text-sm text-gray-500">©2020CoffeeStore</h2>
+                </div>
+            </div>
+    
+            <div class="flex flex-col space-y-4 mx-14">
+                <h1 class="font-semibold">Product</h1>
+                <a class="text-gray-700 text-sm" href="#">Download</a>
+                <a class="text-gray-700 text-sm" href="#">Pricing</a>
+                <a class="text-gray-700 text-sm" href="#">Locations</a>
+                <a class="text-gray-700 text-sm" href="#">Countries</a>
+                <a class="text-gray-700 text-sm" href="#">Blog</a>
+            </div>
+            <div class="flex flex-col space-y-4 mx-14">
+                <h1 class="font-semibold">Engage</h1>
+                <a class="text-gray-700 text-sm" href="home.html">Coffe Shop ?</a>
+                <a class="text-gray-700 text-sm" href="#">FAQ</a>
+                <a class="text-gray-700 text-sm" href="#">About Us</a>
+                <a class="text-gray-700 text-sm" href="#">Privacy Policy</a>
+                <a class="text-gray-700 text-sm" href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+<!-- The Modal -->
+<div id="modalKu" class="modal">
+
+    <div class="mIsi">
+        <div class="flex flex-col justify-center items-center h-full w-full">
+            <h1 class="text-center text-xl pb-7">Are you sure want to delete the selected items?</h1>
+            <div class="flex flex-row justify-center items-center space-x-10">
+              <button id="closeku" class="closeku text-xs bg-white font-bold border-yellow-900 border-2 rounded-lg py-3 px-8 text-yellow-900">Cancel</button>
+              <button  class="text-xs font-bold bg-yellow-900 rounded-lg py-3 px-8 text-white">Delete</button>
+            </div>
+        </div>
+
+    </div>
+  
+  </div>
+
+    <script>
+var modal = document.getElementById("modalKu");
+var btn = document.getElementById("openModal");
+var closebtn = document.getElementsByClassName("closeku")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+closebtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("checkHide");
+  var checkBox2 = document.getElementById("checkHide2");
+  var checkBox3 = document.getElementById("checkHide3");
+  var checkBox4 = document.getElementById("checkHide4");
+  var checkBox5 = document.getElementById("checkHide5");
+  var checkBox6 = document.getElementById("checkHide6");
+  var checkBox7 = document.getElementById("checkHide7");
+  var checkBox8 = document.getElementById("checkHide8");
+  var checkBox9 = document.getElementById("checkHide9");
+  var checkBox10 = document.getElementById("checkHide10");
+  var checkBox11 = document.getElementById("checkHide11");
+  var checkBox12 = document.getElementById("checkHide12");
+  var checkBox13 = document.getElementById("checkHide13");
+  var checkBox14 = document.getElementById("checkHide14");
+  var checkBox15 = document.getElementById("checkHide15");
+  var text = document.getElementById("openModal");
+  var text2 = document.getElementById("hideku");
+  if (checkBox.checked == true ||
+  checkBox2.checked == true ||
+  checkBox3.checked == true ||
+  checkBox4.checked == true ||
+  checkBox5.checked == true ||
+  checkBox6.checked == true ||
+  checkBox7.checked == true ||
+  checkBox8.checked == true ||
+  checkBox9.checked == true ||
+  checkBox10.checked == true ||
+  checkBox11.checked == true ||
+  checkBox12.checked == true ||
+  checkBox13.checked == true ||
+  checkBox14.checked == true ||
+  checkBox15.checked == true
+  ){
+    text.style.display = "block";
+    text2.style.display = "none";
+  } else {
+     text.style.display = "none";
+     text2.style.display = "block";
+  }
+}
+    </script>
+</body>
+</html>
